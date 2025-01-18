@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] height: and width:
+[ yes ] margin: and padding: 
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
@@ -16,17 +16,271 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-size: 18px;
+      }
+      h2 {
+        font-family: "Just Me Again Down Here", serif;
+        color: rgb(255, 217, 217);
+      }
+      h1 {
+        font-family: "Just Me Again Down Here", serif;
+        color: rgb(255, 246, 246);
+      }
+      body {
+        background-image: url("https://preview.redd.it/osaka-bliss-wallpaper-s-now-remastered-v0-8pyp5t9rvs3c1.jpg?width=1080&crop=smart&auto=webp&s=fd95b348a7986b9393af216ae341003a9ec69ebf");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+       {
+        background-color: rgb(212, 235, 251);
+      }
+      #my-message {
+        background-color: rgb(223, 211, 242);
+      }
+      #bojack {
+        background-color: rgb(242, 211, 215);
+      }
+      #rick {
+        background-color: rgb(242, 223, 211);
+      }
+      #arcane {
+        background-color: rgb(242, 239, 211);
+      }
+      .interests {
+        background-color: pink;
+      }
+      .bye {
+        background-color: violet;
+      }
+      img {
+        width: 210px;
+        margin: 20 px;
+        border: 4px solid;
+        padding: 5px;
+      }
+      .eugi {
+        color: pink;
+      }
+      #yum-foodies {
+        background-image: url("https://i.pinimg.com/736x/a8/d7/eb/a8d7eb976e0cd70097fda5f5152d08f7.jpg");
+        width: 600px;
+        height: 1050px;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 150px;
+        perspective: 1000px;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
 
-  </style>
-</head>
-<body>
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
- 
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
 
-</body>
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>me me me</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+        「✦ All about <em>Eugenia</em> aka Eugi <span class="eugi">:3</span> ✦」
+      </h1>
+    </center>
+
+    <h2>I am very silly ...</h2>
+
+    <h3>No judging !!</h3>
+
+    <p class="interests">
+      On this cute little website you can learn a little about my interests ^_^
+    </p>
+
+    <h3>Table of contents</h3>
+
+    <ol>
+      <li>
+        Eugi's favorite <strong> <a href="#food"> food </a> </strong> !!
+      </li>
+      <li>
+        Eugi's favorite <strong> <a href="#music"> music </a> </strong> !!
+      </li>
+      <li>
+        Eugi's favorite <strong> <a href="#shows">shows </a> </strong> !!
+      </li>
+      <li>
+        Eugi's favorite <strong> <a href="#games">games </a> </strong> !!
+      </li>
+      <li>Eugi's <strong>cats</strong> !!</li>
+    </ol>
+    <h3>And bonus ...</h3>
+    <h4>Eugi's message to the world !!</h4>
+    <div id="yum-foodies">
+      <center>
+        <h2>── ⋆⋅☆⋅⋆ ──</h2>
+      </center>
+
+      <center>
+        <h2 id="food">my fav food ୧ ‧₊˚ 🍮 ⋅ ☆</h2>
+      </center>
+
+      <ul>
+        <li>borscht !!!</li>
+        <img
+          src="https://kitchenofyouth.com/wp-content/uploads/2019/10/borscht-w-beef-vertical-overhead-0177.jpg"
+          width="200"
+        />
+        <a href="https://www.simplyrecipes.com/recipes/borscht/"
+          >borscht recipe</a
+        >
+        <li>pizza !!!</li>
+        <img src="https://i.redd.it/30cbo23rikt91.jpg" width="200" />
+        <a href="https://www.simplyrecipes.com/recipes/homemade_pizza/"
+          >pizza recipe</a
+        >
+        <li>popcorn chicken !!!</li>
+        <img
+          src="https://www.halfbakedharvest.com/wp-content/uploads/2020/01/Oven-Fried-Cajun-Popcorn-Chicken-with-Creamy-Honey-Mustard-1.jpg"
+          width="200"
+        />
+        <a
+          href="https://www.indianhealthyrecipes.com/popcorn-chicken-indian-recipe-kfc-style/"
+          >popcorn chicken recipe</a
+        >
+      </ul>
+    </div>
+
+    <center>
+      <h2>── ⋆⋅☆⋅⋆ ──</h2>
+    </center>
+
+    <center>
+      <h2 id="music">my fav music ★🎸🎧⋆｡ °⋆</h2>
+    </center>
+
+    <ul>
+      <li>twenty one pilots Ψ⦻ϟ➶</li>
+      <li>mitski 𓇢𓆸𓇼 ⋆｡˚ 𓆝</li>
+      <li>☾⋆｡tv girl° ✮☽</li>
+    </ul>
+
+    <center>
+      <h2>── ⋆⋅☆⋅⋆ ──</h2>
+    </center>
+
+    <center>
+      <h2 id="shows">📀☆🎥⋆｡ my fav shows 🎞️°‧★📺</h2>
+    </center>
+
+    <ul>
+      <li id="bojack">bojack horseman 🍿</li>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://liketowatchblog.wordpress.com/wp-content/uploads/2015/08/screen-shot-2014-10-03-at-1-59-45-pm.jpg"
+              alt="Avatar"
+              style="width: 150px; height: 150px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>sad horse...</h1>
+            <p>cool show</p>
+          </div>
+        </div>
+      </div>
+
+      <li id="rick">rick and morty 🧪</li>
+      <img
+        src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1663439506/220917-smith-rick-and-morty-hero_csirl9"
+        width="250"
+      />
+      <li id="arcane">arcane 🧁</li>
+      <img src="https://i.redd.it/hwwh1nxgtue81.jpg" width="250" />
+    </ul>
+
+    <center>
+      <h2>── ⋆⋅☆⋅⋆ ──</h2>
+    </center>
+
+    <center>
+      <h2 id="games">my fav games 🖥️👾︶꒷꒦︶ ๋࣭ ⭑</h2>
+    </center>
+
+    <table>
+      <thread>
+        <tr>
+          <th>game name</th>
+          <th>years playing</th>
+        </tr>
+      </thread>
+      <tbody>
+        <tr>
+          <td>valorant !!</td>
+          <td>since 2021 (4 years)</td>
+        </tr>
+        <tr>
+          <td>identity v !!</td>
+          <td>since 2020 (5 years)</td>
+        </tr>
+        <tr>
+          <td>genshin impact !!</td>
+          <td>since 2020 (5 years)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <center>
+      <h2>── ⋆⋅☆⋅⋆ ──</h2>
+    </center>
+    <center>
+      <h2>my message to the world !! ⋆˚🐾˖°</h2>
+    </center>
+    <center>
+      <p id="my-message">
+        please be kind to everyone around you, love cats and get lots of sleep
+        !!
+      </p>
+      <p class="bye">have a good day !!</p>
+    </center>
+  </body>
 </html>
